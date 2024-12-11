@@ -1,0 +1,20 @@
+<!doctype html>
+    <html class="no-js" lang="{{ shop.locale }}">
+      <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="canonical" href="{{ canonical_url }}">
+    
+        {% if settings.favicon != blank %}
+          <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+        {% endif %}
+    
+        {{ content_for_header }}
+      </head>
+    
+      <body class="template-giftcard">
+        {{ content_for_layout }}
+      </body>
+    </html>
+    
