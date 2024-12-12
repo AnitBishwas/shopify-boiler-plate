@@ -22,7 +22,7 @@ jobs:
       - name: Build Files
         run: npm run build
       - name: Deploy
-        env: dev
+        env: 
           # Store URL, like your-store.myshopify.com
           SHOPIFY_FLAG_STORE: '${{ secrets.SHOPIFY_STORE }}'
           # Password generated from Theme Access app
